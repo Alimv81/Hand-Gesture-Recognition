@@ -23,7 +23,7 @@ Before running the code, ensure you have the following dependencies installed:
 - opencv-python
 - Matplotlib (for visualization)
 
-You can install these dependencies using pip
+You can install these dependencies using pip, others maybe optional to use
 
 ## Usage
 
@@ -44,9 +44,9 @@ The CNN model architecture used for this project is defined in the Python code b
 
 ## Results
 
-achieved the accuracy score of 0.9974 for the train dataset
-achieved the accuracy score of 0.9990 for the validation dataset
-achieved the accuracy score of 1.0 for the test dataset
+- achieved the accuracy score of 0.9974 for the train dataset
+- achieved the accuracy score of 0.9990 for the validation dataset
+- achieved the accuracy score of 1.0 for the test dataset
 
 ## Contact Information
 
