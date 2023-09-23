@@ -1,75 +1,56 @@
-Hand Gesture Recognition CNN Model
-Overview
+# Hand Gesture Recognition CNN Model
+
+## Overview
+
 This project is a Convolutional Neural Network (CNN) model built using the TensorFlow library for the purpose of hand gesture recognition. The model is trained to distinguish between 10 different hand shapes or states. Hand gesture recognition has applications in various fields, including sign language interpretation, human-computer interaction, and virtual reality.
 
-Dataset
+## Dataset
+
 The dataset used for training and testing the CNN model can be obtained from [insert dataset source or link here]. The dataset consists of images of hand gestures, each labeled with one of the 10 different hand states.
 
-Dataset Directory Structure
+### Dataset Directory Structure
+
 To use this project, make sure to organize your dataset in the following directory structure:
 
-Dependencies
+
+## Dependencies
+
 Before running the code, ensure you have the following dependencies installed:
 
-TensorFlow
-NumPy
-Matplotlib (for visualization)
-[Any other necessary libraries]
+- TensorFlow
+- NumPy
+- sklearn
+- opencv-python
+- Matplotlib (for visualization)
 
-You can install these dependencies using pip:
-pip install tensorflow numpy matplotlib [other libraries]
-Usage
-Clone this repository:
+You can install these dependencies using pip
 
-Copy code
-git clone [repository URL]
-Navigate to the project directory:
-git clone https://github.com/Alimv81/Hand-Gesture-Recognition
-Copy code
-cd Hand-Gesture-Recognition
-Download and organize your dataset as described above.
+## Usage
 
-Open the train.py script and configure the model parameters, such as batch size, learning rate, and the number of training epochs.
+the code that train the model is put in the project is HandGestureRecognitionTrainingModel.ipynb
+for using the model and not training it run the man.python, it will use the systems webcam to predict the hand gesture in the image
 
-Run the training script to train the CNN model:
+1. download and extract the model
+2. open projects directory
+3. run main.py
 
-Copy code
-python train.py
-After training, you can evaluate the model's performance using the evaluate.py script:
 
-python evaluate.py
-You can also use the trained model for inference on new images using the predict.py script:
+## Model Architecture
 
-css
-Copy code
-python predict.py [path_to_image]
-Model Architecture
-The CNN model architecture used for this project consists of [describe the architecture, including the number of layers, filters, activation functions, and any other relevant details].
+The CNN model architecture used for this project consists of 3 of 2 Conv2D layers stacked over each other with increasing number of filters (64 to 256) and filters shape
+connected to a Dense layer with 256 units and after that a Dense layer with 10 (number of prediction classes) with softmax activation to predict the possibility of existance of each class 
+The CNN model architecture used for this project is defined in the Python code below:
 
-Results
-[Include details about the model's performance, such as accuracy, loss, and any relevant metrics.]
 
-License
-This project is licensed under the [choose a license, e.g., MIT License]. See the LICENSE file for more details.
+## Results
 
-Acknowledgments
-[Optional: Acknowledge any sources, libraries, or individuals who contributed to your project.]
+achieved the accuracy score of 0.9974 for the train dataset
+achieved the accuracy score of 0.9990 for the validation dataset
+achieved the accuracy score of 1.0 for the test dataset
 
-Contact Information
+## Contact Information
+
 If you have any questions or suggestions, feel free to contact the project maintainer:
 
-[Your Name]
-[Your Email Address]
-Contributing
-Contributions to this project are welcome. If you would like to contribute, please follow our contribution guidelines.
-
-Future Improvements
-[Optional: Discuss potential future improvements or features that can be added to the project.]
-
-Troubleshooting
-[Include common issues and their solutions here.]
-
-References
-[Include any references to papers, articles, or resources that inspired or guided your project.]
-
-Please make sure to replace the placeholders with the actual details of your project. A well-documented README file can greatly improve the usability and accessibility of your project to others.
+- [Ali Mohammdi Variani]
+- [amv.ai.wizard@gmail.com]
