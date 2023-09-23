@@ -8,22 +8,6 @@ The dataset used for training and testing the CNN model can be obtained from [in
 Dataset Directory Structure
 To use this project, make sure to organize your dataset in the following directory structure:
 
-markdown
-Copy code
-dataset/
-    ├── class_0/
-    │   ├── image1.jpg
-    │   ├── image2.jpg
-    │   ├── ...
-    ├── class_1/
-    │   ├── image1.jpg
-    │   ├── image2.jpg
-    │   ├── ...
-    ├── ...
-    ├── class_9/
-    │   ├── image1.jpg
-    │   ├── image2.jpg
-    │   ├── ...
 Dependencies
 Before running the code, ensure you have the following dependencies installed:
 
@@ -31,22 +15,18 @@ TensorFlow
 NumPy
 Matplotlib (for visualization)
 [Any other necessary libraries]
-You can install these dependencies using pip:
 
-css
-Copy code
+You can install these dependencies using pip:
 pip install tensorflow numpy matplotlib [other libraries]
 Usage
 Clone this repository:
 
-bash
 Copy code
 git clone [repository URL]
 Navigate to the project directory:
-
-bash
+git clone https://github.com/Alimv81/Hand-Gesture-Recognition
 Copy code
-cd hand-gesture-recognition-cnn
+cd Hand-Gesture-Recognition
 Download and organize your dataset as described above.
 
 Open the train.py script and configure the model parameters, such as batch size, learning rate, and the number of training epochs.
@@ -57,7 +37,6 @@ Copy code
 python train.py
 After training, you can evaluate the model's performance using the evaluate.py script:
 
-Copy code
 python evaluate.py
 You can also use the trained model for inference on new images using the predict.py script:
 
