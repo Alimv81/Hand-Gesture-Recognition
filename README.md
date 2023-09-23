@@ -6,12 +6,12 @@ This project is a Convolutional Neural Network (CNN) model built using the Tenso
 
 ## Dataset
 
-The dataset used for training and testing the CNN model can be obtained from [insert dataset source or link here]. The dataset consists of images of hand gestures, each labeled with one of the 10 different hand states.
+The dataset used for training and testing the CNN model can be obtained from [https://www.kaggle.com/datasets/gti-upm/leapgestrecog]. The dataset consists of images of hand gestures, each labeled with one of the 10 different hand states.
 
-### Dataset Directory Structure
+### Model Directory Structure
 
-To use this project, make sure to organize your dataset in the following directory structure:
-
+- To use this project and the trained model, only make sure to organize your direcory in such a way that best_model.h5 and main.py have the same path.
+- To train the model the code will automatically download the essential datasets, running it would be enough
 
 ## Dependencies
 
@@ -37,9 +37,8 @@ for using the model and not training it run the man.python, it will use the syst
 
 ## Model Architecture
 
-The CNN model architecture used for this project consists of 3 of 2 Conv2D layers stacked over each other with increasing number of filters (64 to 256) and filters shape
-connected to a Dense layer with 256 units and after that a Dense layer with 10 (number of prediction classes) with softmax activation to predict the possibility of existance of each class 
-The CNN model architecture used for this project is defined in the Python code below:
+- The CNN model architecture used for this project consists of 3 of 2 Conv2D layers stacked over each other with increasing number of filters (64 to 256) and filters shape
+- connected to a Dense layer with 256 units and after that a Dense layer with 10 (number of prediction classes) with softmax activation to predict the possibility of existance of each class 
 
 
 ## Results
